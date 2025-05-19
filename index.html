@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>R K ENTERPRISES Dealership Application Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>R K ENTERPRISES Dealership Application Form</h1>
+    <form action="https://formspree.io/f/mblobdke" method="POST">
+      <label>Full Name:<input type="text" name="name" required /></label>
+      <label>Email:<input type="email" name="email" required /></label>
+      <label>Mobile Number:<input type="tel" name="phone" required /></label>
+
+      <label>Type of Business:
+        <select name="businessType" required>
+          <option value="">--Select--</option>
+          <option value="Private Limited">Private Limited</option>
+          <option value="Partnership">Partnership</option>
+          <option value="Proprietorship">Proprietorship</option>
+          <option value="Individual">Individual</option>
+          <option value="HUF">HUF</option>
+          <option value="Other">Other</option>
+        </select>
+      </label>
+
+      <fieldset>
+        <legend>Products Interested In:</legend>
+        <label><input type="checkbox" name="products" value="Drip" /> Drip</label>
+        <label><input type="checkbox" name="products" value="Mini Sprinkler" /> Mini Sprinkler</label>
+        <label><input type="checkbox" name="products" value="Both" /> Both</label>
+        <label><input type="checkbox" name="products" value="Other" /> Other</label>
+      </fieldset>
+
+      <label>Turnover Last 3 Years:</label>
+      <input type="text" name="turnover1" placeholder="Year 1" required />
+      <input type="text" name="turnover2" placeholder="Year 2" required />
+      <input type="text" name="turnover3" placeholder="Year 3" required />
+
+      <label>Previous Dealership Record:
+        <textarea name="dealershipRecord" rows="3"></textarea>
+      </label>
+
+      <label>Bank Name:
+        <select name="bankName" required>
+          <option value="">--Select Bank--</option>
+          <option>State Bank of India</option>
+          <option>HDFC Bank</option>
+          <option>ICICI Bank</option>
+          <option>Punjab National Bank</option>
+          <option>Axis Bank</option>
+          <option>Bank of Baroda</option>
+          <option>Canara Bank</option>
+          <option>Union Bank of India</option>
+          <option>Kotak Mahindra Bank</option>
+        </select>
+      </label>
+
+      <label>Bank Account Number:<input type="text" name="accountNumber" required /></label>
+      <label>IFSC Code:<input type="text" name="ifsc" required /></label>
+
+      <label><input type="checkbox" name="declaration" required />
+        I declare that all information provided is true and correct.
+      </label>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+</body>
+</html>
